@@ -4,7 +4,76 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+<style>
+    .line1 {
+        position: absolute;
+        top: 200px;
+        left: 220px;
+        animation: line 1s infinite linear;
 
+    }
+
+    .line2 {
+        position: absolute;
+        left: 100px;
+        top: 200px;
+        animation: line 1.5s infinite linear;
+
+    }
+
+    .line3 {
+        position: absolute;
+        left: 100px;
+        top: 200px;
+        animation: line 0.5s infinite linear;
+
+    }
+
+    .line4 {
+        position: absolute;
+        left: 197px;
+        top: 200px;
+        animation: line 2s infinite linear;
+
+    }
+
+    .linesz {
+        width: 200px;
+        position: absolute;
+        left: 100px;
+        top: 200px;
+        animation: sz 2s infinite alternate;
+    }
+
+    body {
+        background-color: #000000;
+    }
+
+    @keyframes sz {
+        from {
+            transform: translate3d(-30px, -30px, 30px);
+            /*transform: translate(-30px, -30px);*/
+        }
+        to {
+            transform: translate3d(30px, 30px, -30px);
+            /*transform: translate(30px, 30px);*/
+        }
+    }
+
+    @keyframes line {
+        from {
+            transform: translate(300px, -300px);
+        }
+        to {
+            transform: translate(-300px, 300px);
+        }
+    }
+</style>
+<body>
+<img class="line1" src="../image/line1.png">
+<img class="line2" src="../image/line2.png">
+<img class="line3" src="../image/line3.png">
+<img class="line4" src="../image/line4.png">
+<img class="linesz" src="../image/sz.png">
 </body>
 </html>
