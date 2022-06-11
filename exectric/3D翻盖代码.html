@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .box {
+        width: 200px;
+        height: 200px;
+        perspective: 500px;
+        /*子绝父相*/
+        position: relative;
+        margin: 200px 200px;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        border: 1px black solid;
+        border-radius: 50%;
+        position: absolute;
+        transition: all 1s;
+    }
+
+    .box1 .dog {
+        transform-origin: top center;
+    }
+
+    .box1:hover .dog {
+        transform: rotateX(180deg);
+    }
+
+    .box2 .dog {
+        transform-origin: left center;
+    }
+
+    .box2:hover .dog {
+        transform: rotateY(-180deg);
+    }
+
+</style>
+<body>
+<div class="box box1">
+    <img class="cat" src="../image/cat2.jpg">
+    <img class="dog" src="../image/dog.jpg">
+</div>
+<div class="box box2">
+    <img class="cat" src="../image/cat2.jpg">
+    <img class="dog" src="../image/dog.jpg">
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .dog {
+        width: 300px;
+        height: 300px;
+        border: 1px black solid;
+    }
+
+    .cat {
+        width: 300px;
+        height: 300px;
+        border: 1px black solid;
+    }
+
+    .box:hover .cat {
+        transform: rotateX(360deg);
+    }
+
+    .box:hover .dog {
+        transform: rotateY(360deg);
+    }
+
+    .box:hover .ele {
+        transform: rotateZ(360deg);
+    }
+
+    img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        transition: all 1s;
+    }
+
+    .box {
+        width: 300px;
+        height: 300px;
+        /*景深*/
+        perspective: 500px;
+        margin: 100px 100px;
+    }
+
+    .ele {
+        width: 300px;
+        height: 300px;
+        border: 1px black solid;
+    }
+</style>
+<body>
+<div class="box">
+    <img class="cat" src="../image/cat2.jpg">
+
+</div>
+
+<div class="box">
+    <img class="dog" src="../image/dog.jpg">
+</div>
+
+<div class="box">
+    <img class="ele" src="../image/elephant.jpg">
+</div>
+
+</body>
+</html>
