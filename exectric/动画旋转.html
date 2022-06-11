@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="root">
+    <img src="../image/cat.png">
+</div>
+</body>
+<style>
+    .root{
+        width: 300px;
+        margin: 0 auto;
+        border: 1px #bbffaa solid;
+        border-radius: 50%;
+        justify-self: auto;
+    }
+    img{
+        width: 300px;
+        height: 300px;
+        animation: dong 0.5s infinite linear;
+    }
+    /*定义动画*/
+    @keyframes dong {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+</style>
+</html>       

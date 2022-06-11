@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1 {
+            border: 10px solid red;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: #bbffaa;
+            float: left;
+        }
+        .box1::after{
+          display: block;
+          content: '';
+          clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <div class="box2"></div>
+<!--    <div class="box3">aaa</div>-->
+</div>
+</body>
+</html>
